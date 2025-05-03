@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>women</title>
+    <link rel="stylesheet" href="women/shop.css">
+    
+</head>
+<body  id="middle">
+    
+     
+
+    <section class="container">
+      <h1> WOMAN</h1>
+        <div class="products">
+
+            <div class="carts">
+                <div>
+                    <img src="women/dress.jpg" alt="">
+                    <p><span>120</span>$</p>
+                </div>
+                
+                <p class="title">Dress</p>
+                <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="women/long-dress.jpg" alt="">
+                    <p><span>90</span>$</p>
+                </div>
+                <p class="title">Long dress</p>
+                <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="women/skirt.jpg" alt="">
+                    <p><span>95</span>$</p>
+                </div>
+                <p class="title">Skirt</p>
+                <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+            </div>
+        </div>    
+        
+        <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">                  
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+            </div>
+                
+    </section>  
+    
+   
+<div> 
+
+<div class="container">
+<div class="btn-menu">	
+    
+    
+<nav class="menu">
+<div id="left"><label for="btn-menu"><img height="30" width="30" src="women/menu1.png"/>  </label></div>
+    
+   
+
+
+<div id="pad"><a href="#"> <img height="20" width="20" src="women/user.png"/></a>
+		 <img onclick="showCart(this)" height="20" width="20" src="women/shopping.png" alt=""> 
+      
+                <a href="#"> <img height="20" width="20" src="women/search.png"/></a> </div>
+
+		 </nav> 
+    <nav>
+    
+    
+    
+    </nav>
+    
+<!-- Internal menu-->
+<input type="checkbox" id="btn-menu">
+		<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+
+                        <a href="index.html">Principal</a>
+			<a href="shop.html">Women</a>
+			<a href="#">Men</a>
+                        <a href="#">Orders</a>
+			<a href="aboutus.html">About us</a>
+                        <a href="contactus.html">Contact us</a>
+                        <a href="nft.html">What is NFT ?</a>
+
+ </nav>
+		<label for="btn-menu">✖️</label> </div></div>
+</div>
+</div>
+    </div> 
+
+
+
+    <footer>
+       
+    </footer>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="./custom.js" ></script>
+</body>
+</html>
